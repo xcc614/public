@@ -10,7 +10,7 @@ function post(req, res){
 		let prams=JSON.parse(str);
 		fs.rename(prams.odlpath,prams.newpath,(err)=>{
 			if(err)res.end(JSON.stringify({code:500,data:err}))
-			else  res.end(JSON.stringify({code:200,data:'成功'}))
+			else  res.end(JSON.stringify({code:200,data:'成功1'})) 
 		})
 	});
 }
